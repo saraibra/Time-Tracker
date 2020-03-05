@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:time_tracker/app/app_signin/signin_page.dart';
-import 'package:time_tracker/app/home_page.dart';
+import 'package:time_tracker/app/jobs_page.dart';
 import 'package:time_tracker/services/auth.dart';
 
 class LandingPage extends StatelessWidget {
@@ -17,7 +17,7 @@ class LandingPage extends StatelessWidget {
             if (user == null) {
               return SignInPage.create(context);
             }
-            return HomePage();
+            return JobPage();
           } else {
             return Scaffold(
               body: Center(

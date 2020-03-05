@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:time_tracker/common_widgets/platform_alret_dialog.dart';
 import 'package:time_tracker/services/auth.dart';
 
-class HomePage extends StatelessWidget {
+class JobPage extends StatelessWidget {
   Future<void> _confirmSignOut(BuildContext context) async {
     final deadRequestSignOut = await PlatformAlretDialog(
       title: 'Logout',
